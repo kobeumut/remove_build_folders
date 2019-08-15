@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
     #spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "http://github.com/kobeumut/remove_builds"
+    spec.metadata["source_code_uri"] = "http://github.com/kobeumut/remove_build_folders"
 
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
@@ -36,6 +36,7 @@ Gem::Specification.new do |spec|
   spec.executables   = ["remove_build_folders"]
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "tty-prompt"
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.0"

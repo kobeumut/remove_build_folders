@@ -2,4 +2,4 @@
 require "remove_build_folders"
 
 
-RemoveBuildFolders.new
+RemoveBuildFolders::Start.new

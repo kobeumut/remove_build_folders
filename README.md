@@ -1,28 +1,29 @@
 # RemoveBuildFolders
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/remove_build_folders`. To experiment with that code, run `bin/console` for an interactive prompt.
+####  > English
+In the following way, you can install this library with gem install method, remove_build_folders and select the folder path from the list and start automatic deletion. It will search all the folders under the selected folder and delete the folders named build.
 
-TODO: Delete this and the text above, and describe your gem
+####  > Türkçe
+Aşağıdaki şekilde gem install metoduyla bu kütüphaneyi yükleyerek terminale remove_build_folders yazarak listeden klasör yolunu seçip otomatik silme işlemini başlatabilirsiniz. Seçtiğiniz klasör altındaki tüm klasörleri arayarak içerisinde build adında olan klasörleri silecektir.
+
+## Attention
+
+####  > English
+It will delete all the folders named build in the selected folder. Watch out if you have important build folders!
+
+####  > Türkçe
+Seçtiğiniz klasör içindeki bütün build adlı klasörleri silecektir. Önemli build klasörleriniz varsa dikkat ediniz!
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'remove_build_folders'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install remove_build_folders
 
 ## Usage
 
-TODO: Write usage instructions here
+remove_build_folders to the terminal after installing then select folder in list or you can enter own path. Thats it.
+
+![](remove_build_folders.gif)
+
 
 ## Development
 
@@ -32,7 +33,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/remove_build_folders. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/kobeumut/remove_build_folders. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +41,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the RemoveBuildFolders project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/remove_build_folders/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the RemoveBuildFolders project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/kobeumut/remove_build_folders/blob/master/CODE_OF_CONDUCT.md).
