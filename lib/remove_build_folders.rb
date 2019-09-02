@@ -6,24 +6,30 @@ module RemoveBuildFolders
   class Error < StandardError; end
   class Start
   	prompt = TTY::Prompt.new
-
+        pwd= `pwd`.strip
 	continue = prompt.select("Choose your path for delete build folder?") do |menu|
-	    menu.default 2
-
-	    menu.choice File.expand_path('~'), 1
-	    menu.choice "#{File.expand_path('~')}/Documents", 2
-	    menu.choice "#{File.expand_path('~')}/Desktop", 3
-	    menu.choice 'I want to write full path', 4
+	    menu.default 1
+            
+	    menu.choice pwd, 1
+	    menu.choice File.expand_path('~'), 2
+            menu.choice "#{File.expand_path('~')}/Documents", 3
+	    menu.choice "#{File.expand_path('~')}/Desktop", 4
+	    menu.choice 'I want to write full path', 5
+            menu.choice 'Exit', 6
 	end
 	case continue
-	when 1
-	    continue = File.expand_path('~')
+        when 1
+            continue = pwd
 	when 2
-	    continue = "#{File.expand_path('~')}/Documents"
+	    continue = File.expand_path('~')
 	when 3
-	    continue = "#{File.expand_path('~')}/Desktop"
+	    continue = "#{File.expand_path('~')}/Documents"
 	when 4
+	    continue = "#{File.expand_path('~')}/Desktop"
+	when 5
 	    continue = prompt.ask("Enter your custom path:")
+        when 6
+            `return 0`
 	end
 	unless continue.nil?
 	    $stdout.sync = true

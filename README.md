@@ -24,6 +24,9 @@ remove_build_folders to the terminal after installing then select folder in list
 
 ![](remove_build_folders.gif)
 
+## New Features
+### Version: 0.1.8
+Added current folder in folder list
 
 ## Development
 
